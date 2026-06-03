@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Event Portal</title>
+    <!-- Import Poppins font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Compiled Bootstrap CSS from Sass -->
+    <link rel="stylesheet" href="css/custom-bootstrap.css">
+    <!-- Bootstrap Icons CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body {
+            /* Fallback HEX color with background image */
+            background-color: #f3f4f6;
+            background-image: linear-gradient(rgba(243, 244, 246, 0.72), rgba(243, 244, 246, 0.72)), url('https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;            padding-bottom: 120px;        }
+    </style>
+    <!-- External stylesheet linked successfully -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <a href="#mainHeader">Home</a>
+            <a href="#events">Events</a>
+            <a href="#contact">Registration</a>
+            <a href="#feedback">Feedback</a>
+            <a href="#promo">Promo</a>
+            <a href="help.html" target="_blank">Help</a>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Hero Section -->
+        <section id="mainHeader" class="animate-up">
+            <h1 style="color: red;">Community Event Portal</h1>
+            <p>We're thrilled to have you here! Join our amazing community activities and connect with your neighbors.</p>
+            <p style="margin-bottom: 30px;">Take advantage of our <span class="highlight">Special Offer</span>: 50% off all event registrations this week!</p>
+            <div id="welcomeBanner" style="display:inline-block; background:#2563eb; color:#fff; padding:12px 16px; border-radius:999px; margin-bottom:20px; font-weight:700;">Welcome to the Community Portal</div>
+            <a href="#contact" class="cta-btn">Register for an Event</a>
+            <button id="registerBtn" class="submit-btn" type="button" style="max-width: 240px; margin-top: 20px;">Sample Register</button>
+        </section>
+
+        <!-- Bootstrap 5 Sample Section -->
+        <section id="bootstrap-sample" class="container animate-up py-5">
+            <h2>Bootstrap 5 Sample</h2>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Bootstrap Card</h5>
+                            <p class="card-text">This section demonstrates a Bootstrap layout using a responsive grid, cards, and buttons from the downloaded Bootstrap files.</p>
+                            <a href="#events" class="btn btn-primary">See Events</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-success">
+                        <div class="card-body">
+                            <h5 class="card-title">Responsive Utilities</h5>
+                            <p class="card-text">The Bootstrap grid below adapts to screen width automatically and shows how local Bootstrap assets are being applied.</p>
+                            <button class="btn btn-outline-success">Local Bootstrap JS</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Responsive Grid Layout Demo -->
+        <section id="responsive-grid" class="container animate-up py-5">
+            <h2>Responsive Grid Layout</h2>
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 border-primary shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Column 1</h5>
+                                <p class="card-text">Stacks on mobile, becomes two columns on tablets, and three columns on desktop.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 border-secondary shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Column 2</h5>
+                                <p class="card-text">Each column uses Bootstrap's responsive <code>.col-12</code>, <code>.col-md-6</code>, and <code>.col-lg-4</code> classes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 border-success shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Column 3</h5>
+                                <p class="card-text">This layout is fully responsive and adjusts automatically across mobile, tablet, and desktop breakpoints.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Two-Column Sidebar Layout -->
+        <section id="sidebar-layout" class="container animate-up py-5">
+            <h2>Two-Column Layout with Sidebar</h2>
+            <div class="row gx-4 gy-4">
+                <aside class="col-12 col-md-3">
+                    <div class="card h-100 border-info shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Sidebar</h5>
+                            <p class="card-text">This sidebar uses <code>col-md-3</code> to occupy 3/12 of the row on medium and larger screens, and spans full width on mobile.</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Navigation</li>
+                                <li class="list-group-item">Filters</li>
+                                <li class="list-group-item">Quick links</li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+                <article class="col-12 col-md-9">
+                    <div class="card h-100 border-primary shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Content Area</h5>
+                            <p class="card-text">This content area uses <code>col-md-9</code> so it fills the remaining 9/12 of the row on medium and larger screens.</p>
+                            <p class="card-text">On mobile, the sidebar and content stack vertically because both use <code>col-12</code> at smaller breakpoints.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Four-Column Equal Width Layout -->
+        <section id="four-column-layout" class="container animate-up py-5">
+            <h2>Four-Column Equal Width Layout</h2>
+            <div class="row gx-3 gy-3">
+                <div class="col-12 col-sm-3">
+                    <div class="card h-100 border-warning shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Item 1</h5>
+                            <p class="card-text">Uses <code>col-sm-3</code> so four items sit side by side from small screens upward.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="card h-100 border-warning shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Item 2</h5>
+                            <p class="card-text">Each column is equal width on small screens and larger.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="card h-100 border-warning shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Item 3</h5>
+                            <p class="card-text">On extra-small screens, these cards stack vertically because of <code>col-12</code>.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="card h-100 border-warning shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Item 4</h5>
+                            <p class="card-text">This is a four-column equal-width layout built with Bootstrap grid classes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Alignment and Reordering Demo -->
+        <section id="alignment-reordering" class="container animate-up py-5">
+            <h2>Alignment and Reordering in Grid</h2>
+            <div class="row justify-content-center align-items-center text-center gx-4 gy-4">
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 border-info shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Centered Column</h5>
+                            <p class="card-text">This row uses <code>justify-content-center</code> and <code>align-items-center</code> to center the content both horizontally and vertically.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 border-info shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Centered Column</h5>
+                            <p class="card-text">The row will center all items and keep them aligned in the middle across the available row height.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-4 gy-4 mt-4">
+                <div class="col-12 col-md-6 order-md-2">
+                    <div class="card h-100 border-success shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Reordered Column</h5>
+                            <p class="card-text">This column uses <code>order-md-2</code>, so it appears second on medium+ screens but first on mobile.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 order-md-1">
+                    <div class="card h-100 border-primary shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Primary Column</h5>
+                            <p class="card-text">This uses <code>order-md-1</code> to appear first on medium+ screens while stacking below on smaller screens.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Responsive Flexbox Utilities -->
+        <section id="flexbox-utilities" class="container animate-up py-5">
+            <h2>Responsive Flexbox Utilities</h2>
+            <div class="card p-4 mb-4">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                    <div>
+                        <h5 class="card-title">Responsive Navbar</h5>
+                        <p class="card-text mb-0">This navigation example uses <code>d-flex</code>, <code>flex-column</code>, and <code>flex-md-row</code> to stack vertically on mobile and lay out horizontally on medium screens and larger.</p>
+                    </div>
+                    <nav class="d-flex flex-column flex-md-row gap-2">
+                        <a class="btn btn-outline-primary" href="#mainHeader">Home</a>
+                        <a class="btn btn-outline-primary" href="#events">Events</a>
+                        <a class="btn btn-outline-primary" href="#contact">Register</a>
+                        <a class="btn btn-outline-primary" href="#feedback">Feedback</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="card p-4">
+                <div class="d-flex justify-content-between align-items-center gap-3 flex-column flex-sm-row">
+                    <div>
+                        <h5 class="card-title">Card Layout with Flex Utilities</h5>
+                        <p class="card-text mb-0">This card uses <code>justify-content-between</code> to space content horizontally and <code>align-items-center</code> to center the items vertically.</p>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn btn-success" type="button">Action 1</button>
+                        <button class="btn btn-secondary" type="button">Action 2</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bootstrap Typography Utilities -->
+        <section id="typography-utilities" class="container animate-up py-5">
+            <h2>Bootstrap Typography Utilities</h2>
+            <div class="card p-4 mb-4">
+                <h1 class="display-1">Display 1 Heading</h1>
+                <p class="lead">This is a lead paragraph demonstrating the Bootstrap <code>lead</code> utility for emphasis.</p>
+                <p class="text-muted">This text uses the <code>text-muted</code> utility to create a softer, less prominent color.</p>
+                <p class="fw-bold">This paragraph is bold using the <code>fw-bold</code> utility.</p>
+            </div>
+            <div class="card p-4">
+                <p class="text-uppercase">This text is uppercase using <code>text-uppercase</code>.</p>
+                <p class="text-lowercase">THIS TEXT IS LOWERCASE USING <code>text-lowercase</code>.</p>
+                <p class="text-capitalize">this text is capitalized using <code>text-capitalize</code>.</p>
+            </div>
+        </section>
+
+        <!-- Bootstrap Buttons and Button Groups -->
+        <section id="button-utilities" class="container animate-up py-5">
+            <h2>Bootstrap Buttons</h2>
+            <div class="card p-4 mb-4">
+                <h5 class="card-title">Contextual Buttons</h5>
+                <div class="d-flex flex-wrap gap-2">
+                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-secondary">Secondary</button>
+                    <button type="button" class="btn btn-success">Success</button>
+                    <button type="button" class="btn btn-danger">Danger</button>
+                    <button type="button" class="btn btn-warning">Warning</button>
+                    <button type="button" class="btn btn-info">Info</button>
+                    <button type="button" class="btn btn-light">Light</button>
+                    <button type="button" class="btn btn-dark">Dark</button>
+                </div>
+            </div>
+            <div class="card p-4 mb-4">
+                <h5 class="card-title">Outlined Buttons</h5>
+                <div class="d-flex flex-wrap gap-2">
+                    <button type="button" class="btn btn-outline-primary">Outline Primary</button>
+                    <button type="button" class="btn btn-outline-secondary">Outline Secondary</button>
+                    <button type="button" class="btn btn-outline-success">Outline Success</button>
+                    <button type="button" class="btn btn-outline-danger">Outline Danger</button>
+                    <button type="button" class="btn btn-outline-warning">Outline Warning</button>
+                    <button type="button" class="btn btn-outline-info">Outline Info</button>
+                    <button type="button" class="btn btn-outline-dark">Outline Dark</button>
+                </div>
+            </div>
+            <div class="card p-4 mb-4">
+                <h5 class="card-title">Icon-only Buttons</h5>
+                <div class="d-flex flex-wrap gap-2">
+                    <button type="button" class="btn btn-primary btn-lg" aria-label="Search"><i class="bi bi-search"></i></button>
+                    <button type="button" class="btn btn-success btn-lg" aria-label="Send"><i class="bi bi-send"></i></button>
+                    <button type="button" class="btn btn-danger btn-lg" aria-label="Heart"><i class="bi bi-heart"></i></button>
+                    <button type="button" class="btn btn-warning btn-lg" aria-label="Star"><i class="bi bi-star"></i></button>
+                </div>
+            </div>
+            <div class="card p-4">
+                <h5 class="card-title">Button Group & Toggle Buttons</h5>
+                <div class="btn-group mb-3" role="group" aria-label="Basic button group">
+                    <button type="button" class="btn btn-primary">Left</button>
+                    <button type="button" class="btn btn-primary">Middle</button>
+                    <button type="button" class="btn btn-primary">Right</button>
+                </div>
+                <div class="btn-group" role="group" aria-label="Toggle button group">
+                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btncheck1">Toggle 1</label>
+
+                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btncheck2">Toggle 2</label>
+
+                    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btncheck3">Toggle 3</label>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation Demo -->
+        <section id="nav-demo" class="container animate-up py-5">
+            <h2>Navbars and Navigation</h2>
+            <nav class="navbar navbar-expand-md navbar-light bg-light rounded-3 mb-4">
+                <div class="container-fluid">
+                    <a class="navbar-brand fw-bold" href="#mainHeader">Community</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#mainHeader">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#events">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#feedback">Feedback</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search events" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <div class="card p-4">
+                <ul class="nav nav-tabs mb-3" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-panel" type="button" role="tab" aria-controls="contact-tab-panel" aria-selected="false">Contact</button>
+                    </li>
+                </ul>
+                <div class="tab-content p-3 border rounded-bottom">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <p>This is the home tab content for Bootstrap tabbed navigation.</p>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <p>Profile tab content appears here when the tab is selected.</p>
+                    </div>
+                    <div class="tab-pane fade" id="contact-tab-panel" role="tabpanel" aria-labelledby="contact-tab">
+                        <p>Contact tab content can include form links, support, or help resources.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card p-4 mt-4">
+                <ul class="nav nav-pills justify-content-center gap-2" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pill-home" data-bs-toggle="pill" data-bs-target="#pill-home-panel" type="button" role="tab" aria-controls="pill-home-panel" aria-selected="true">Pill Home</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pill-profile" data-bs-toggle="pill" data-bs-target="#pill-profile-panel" type="button" role="tab" aria-controls="pill-profile-panel" aria-selected="false">Pill Profile</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pill-messages" data-bs-toggle="pill" data-bs-target="#pill-messages-panel" type="button" role="tab" aria-controls="pill-messages-panel" aria-selected="false">Pill Messages</button>
+                    </li>
+                </ul>
+                <div class="tab-content p-3 border rounded-bottom">
+                    <div class="tab-pane fade show active" id="pill-home-panel" role="tabpanel" aria-labelledby="pill-home">Pill home content.</div>
+                    <div class="tab-pane fade" id="pill-profile-panel" role="tabpanel" aria-labelledby="pill-profile">Pill profile content.</div>
+                    <div class="tab-pane fade" id="pill-messages-panel" role="tabpanel" aria-labelledby="pill-messages">Pill messages content.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bootstrap JavaScript Plugins -->
+        <section id="js-plugins" class="container animate-up py-5">
+            <h2>Bootstrap JavaScript Plugins</h2>
+            <div class="card p-4 mb-4">
+                <h5 class="card-title">Modal Popup</h5>
+                <p class="card-text">Click the button to open a Bootstrap modal.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Launch Modal
+                </button>
+            </div>
+            <div class="card p-4">
+                <h5 class="card-title">Accordion</h5>
+                <div class="accordion" id="exampleAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Accordion Item #1
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#exampleAccordion">
+                            <div class="accordion-body">
+                                This is the first item's accordion body. It is shown by default, and it uses Bootstrap's JavaScript collapse behavior.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Accordion Item #2
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#exampleAccordion">
+                            <div class="accordion-body">
+                                This content is hidden until the second accordion header is clicked. It uses <code>data-bs-toggle="collapse"</code>.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#exampleAccordion">
+                            <div class="accordion-body">
+                                The third accordion item contains additional details and demonstrates multiple collapsible panels.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal markup -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Example Modal</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            This is a Bootstrap modal popup. It is triggered by a button and uses the bundled Bootstrap JavaScript plugin.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spacing Utilities and Pricing Section -->
+        <section id="spacing-utilities" class="container animate-up py-5">
+            <h2 class="mb-4">Spacing Utilities</h2>
+            <div class="card p-4 mb-4">
+                <div class="mb-3 p-2 bg-light rounded">
+                    <h5 class="mb-2">Margin and Padding Demo</h5>
+                    <p class="mb-0">This block uses <code>m-3</code> to add outer spacing and <code>p-2</code> for inner padding.</p>
+                </div>
+                <div class="mt-4 p-3 bg-white border rounded">
+                    <h5 class="mt-4">Additional spacing</h5>
+                    <p class="py-5">This section uses <code>mt-4</code> for top margin and <code>py-5</code> for vertical padding to improve whitespace and layout balance.</p>
+                </div>
+            </div>
+            <div class="card p-4">
+                <h5 class="card-title mb-4">Pricing Section</h5>
+                <div class="row g-4">
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 border-primary shadow-sm p-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Basic Plan</h5>
+                                <p class="card-text text-muted">Perfect for individuals getting started.</p>
+                                <h3 class="fw-bold">$9<span class="fs-6 text-muted">/mo</span></h3>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li class="mb-2">1 event registration</li>
+                                    <li class="mb-2">Email support</li>
+                                    <li class="mb-2">Community access</li>
+                                </ul>
+                                <button class="btn btn-primary w-100">Choose Basic</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 border-success shadow-sm p-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Standard Plan</h5>
+                                <p class="card-text text-muted">Best for small groups and teams.</p>
+                                <h3 class="fw-bold">$29<span class="fs-6 text-muted">/mo</span></h3>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li class="mb-2">5 event registrations</li>
+                                    <li class="mb-2">Priority email support</li>
+                                    <li class="mb-2">Event analytics</li>
+                                </ul>
+                                <button class="btn btn-success w-100">Choose Standard</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 border-warning shadow-sm p-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Premium Plan</h5>
+                                <p class="card-text text-muted">Advanced tools for organizers and sponsors.</p>
+                                <h3 class="fw-bold">$59<span class="fs-6 text-muted">/mo</span></h3>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li class="mb-2">Unlimited registrations</li>
+                                    <li class="mb-2">Dedicated support</li>
+                                    <li class="mb-2">Custom branding</li>
+                                </ul>
+                                <button class="btn btn-warning w-100">Choose Premium</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Colors and Backgrounds -->
+        <section id="color-backgrounds" class="container animate-up py-5">
+            <h2 class="mb-4">Colors and Backgrounds</h2>
+            <div class="row g-4 mb-4">
+                <div class="col-12 col-md-6">
+                    <div class="p-3 rounded bg-primary text-white">Primary background with white text</div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="p-3 rounded bg-warning text-dark">Warning background with dark text</div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="p-3 rounded bg-success text-white">Success background with white text</div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="p-3 rounded bg-info text-dark">Info background with dark text</div>
+                </div>
+            </div>
+            <div class="card bg-gradient bg-dark text-white p-4">
+                <div class="row g-3 align-items-center">
+                    <div class="col-12 col-md-4">
+                        <div class="bg-white bg-opacity-10 rounded-3 p-3 h-100">
+                            <h5 class="text-white">Dashboard Summary</h5>
+                            <p class="mb-2 text-muted">Key metrics at a glance.</p>
+                            <p class="mb-0">New registrations, event RSVPs, and active organizers are displayed here with clear contrast.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <div class="row g-3">
+                            <div class="col-12 col-sm-4">
+                                <div class="p-3 rounded bg-white bg-opacity-10 text-white text-center">
+                                    <h6>Events</h6>
+                                    <p class="fs-4 fw-bold mb-0">24</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <div class="p-3 rounded bg-white bg-opacity-10 text-white text-center">
+                                    <h6>Attendees</h6>
+                                    <p class="fs-4 fw-bold mb-0">1.2K</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <div class="p-3 rounded bg-white bg-opacity-10 text-white text-center">
+                                    <h6>Feedback</h6>
+                                    <p class="fs-4 fw-bold mb-0">98%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Display and Visibility Utilities -->
+        <section id="display-visibility" class="container animate-up py-5">
+            <h2>Display and Visibility</h2>
+            <div class="card p-4 mb-4">
+                <div class="row g-3">
+                    <div class="col-12">
+                        <div class="p-3 bg-light rounded">
+                            <p class="mb-0">Resize the browser to see these sections appear and disappear using Bootstrap display utilities.</p>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="p-3 rounded bg-primary text-white d-none d-md-block">
+                            This box is hidden on mobile and visible on medium screens and above using <code>d-none d-md-block</code>.
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="p-3 rounded bg-success text-white d-none d-lg-flex justify-content-center align-items-center" style="min-height: 100px;">
+                            This box is hidden until large screens using <code>d-none d-lg-flex</code> and centers content with flex utilities.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card p-4">
+                <h5 class="card-title mb-3">Responsive Tablet-Above Sidebar</h5>
+                <div class="row">
+                    <aside class="d-none d-md-block col-md-3">
+                        <div class="p-3 bg-secondary text-white rounded h-100">
+                            <h6>Sidebar</h6>
+                            <p class="mb-0">Visible on tablets and larger screens only.</p>
+                        </div>
+                    </aside>
+                    <div class="col-12 col-md-9">
+                        <div class="p-3 bg-white rounded border">
+                            <h6>Main content</h6>
+                            <p class="mb-0">This content column expands full width on mobile and shares space with the sidebar on medium and larger screens.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Borders, Shadows, and Rounded Corners -->
+        <section id="borders-shadows" class="container animate-up py-5">
+            <h2>Borders, Shadows, and Rounded Corners</h2>
+            <div class="row g-4 mb-4">
+                <div class="col-12 col-md-6">
+                    <div class="card shadow rounded-pill text-center">
+                        <img src="cleanup.jpg" class="card-img-top rounded-circle border border-primary border-3 mx-auto mt-4" alt="Profile avatar" style="width: 140px; height: 140px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Profile Card</h5>
+                            <p class="card-text text-muted mb-3">Using <code>card</code>, <code>card-body</code>, <code>card-title</code>, and <code>card-img-top</code> utilities with a rounded border image.</p>
+                            <button class="btn btn-primary">View Profile</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="card shadow-lg rounded-pill p-4">
+                        <div class="d-flex align-items-start">
+                            <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=200&q=80" class="flex-shrink-0 rounded-circle border border-3 border-warning" alt="User avatar" width="80" height="80">
+                            <div class="ms-3">
+                                <h5 class="card-title">Media Object Layout</h5>
+                                <p class="card-text mb-1">This layout aligns an image to the left of the content using flex utilities to mimic a media object.</p>
+                                <p class="text-muted mb-0">The image and text are placed side by side, with the image left-aligned and content flowing to the right.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card shadow rounded-pill p-4 bg-light">
+                <div class="row align-items-center">
+                    <div class="col-12 col-sm-4 text-center mb-3 mb-sm-0">
+                        <div class="p-4 border border-3 border-success rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 120px; height: 120px;">
+                            <span class="fs-4 fw-bold text-success">15</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-8">
+                        <h5 class="card-title">Rounded Pill Section</h5>
+                        <p class="card-text mb-0">This section uses <code>shadow</code>, <code>shadow-lg</code>, and <code>rounded-pill</code> to create a soft, pill-shaped card layout.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events Gallery -->
+        <section id="events" class="container animate-up">
+            <h2>Past Events Gallery</h2>
+            <table class="gallery-table">
+                <caption>Community Events Gallery</caption>
+                <tr>
+                    <td>
+                        <div class="eventCard">
+                            <img src="cleanup.jpg" alt="Spring Community Cleanup" title="Spring Community Cleanup" class="event-img gallery-img">
+                            <div class="event-content"><em>Spring Community Cleanup</em></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eventCard">
+                            <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=600&q=80" alt="Crowd at a summer festival" title="Summer Festival" class="event-img gallery-img">
+                            <div class="event-content"><em>Annual Summer Festival</em></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eventCard">
+                            <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=600&q=80" alt="People running in a race" title="5k Charity Run" class="event-img gallery-img">
+                            <div class="event-content"><em>5k Charity Run</em></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="eventCard">
+                            <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=600&q=80" alt="Boxes of donated food" title="Holiday Food Drive" class="event-img gallery-img">
+                            <div class="event-content"><em>Holiday Food Drive</em></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eventCard">
+                            <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=600&q=80" alt="Paintings displayed at an exhibition" title="Local Art Exhibition" class="event-img gallery-img">
+                            <div class="event-content"><em>Local Art Exhibition</em></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eventCard">
+                            <img src="https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?auto=format&fit=crop&w=600&q=80" alt="People sitting in a town hall meeting" title="Town Hall Meeting" class="event-img gallery-img">
+                            <div class="event-content"><em>Town Hall Meeting</em></div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- Geolocation Section -->
+            <div class="card max-w-md" style="margin-top: 50px; text-align: center;">
+                <h3 style="color: var(--primary);">Find Events Near You</h3>
+                <p style="margin-bottom: 20px; color: var(--text-light);">Allow location access to find the nearest community events in your area.</p>
+                <button id="geoBtn" class="submit-btn" style="max-width: 250px;">Find Nearby Events</button>
+                <p id="geoOutput" style="margin-top: 20px; font-weight: 600; font-size: 1.1rem;"></p>
+            </div>
+        </section>
+
+        
+        <!-- Admin Table Section -->
+        <section id="admin-table" class="container animate-up">
+            <h2>Events Admin Dashboard</h2>
+            <div class="card">
+                <table class="events-table">
+                    <thead>
+                        <tr>
+                            <th>Event Name</th>
+                            <th>Date</th>
+                            <th>Location</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Spring Community Cleanup</td>
+                            <td>May 10, 2026</td>
+                            <td>Central Park</td>
+                            <td>Completed</td>
+                        </tr>
+                        <tr>
+                            <td>Annual Summer Festival</td>
+                            <td>June 15, 2026</td>
+                            <td>Town Square</td>
+                            <td>Upcoming</td>
+                        </tr>
+                        <tr>
+                            <td>5k Charity Run</td>
+                            <td>July 4, 2026</td>
+                            <td>Riverfront</td>
+                            <td>Planning</td>
+                        </tr>
+                        <tr>
+                            <td>Local Art Exhibition</td>
+                            <td>August 20, 2026</td>
+                            <td>City Hall</td>
+                            <td>Upcoming</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Registration Form -->
+        <section id="contact" class="container animate-up py-5">
+            <h2>Event Registration</h2>
+            <div class="card p-4 mb-4">
+                <form id="registrationForm" class="row g-3">
+                    <div class="col-12">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name" required autofocus>
+                        <div class="invalid-feedback">Please enter your full name.</div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="resident@community.com" required>
+                        <div class="invalid-feedback">Please enter a valid email address.</div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label for="date" class="form-label">Event Date</label>
+                        <input type="date" class="form-control" id="date" name="date" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="eventType" class="form-label">Select Event Type</label>
+                        <select id="eventType" name="eventType" class="form-select" required>
+                            <option value="">-- Choose an Event --</option>
+                            <option value="cleanup">Spring Community Cleanup</option>
+                            <option value="festival">Annual Summer Festival</option>
+                            <option value="run">5k Charity Run</option>
+                            <option value="food">Holiday Food Drive</option>
+                            <option value="art">Local Art Exhibition</option>
+                            <option value="townhall">Town Hall Meeting</option>
+                        </select>
+                        <div class="invalid-feedback">Please select an event type.</div>
+                    </div>
+                    <div class="col-12">
+                        <label for="message" class="form-label">Additional Message / Questions</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" placeholder="Do you have any dietary restrictions or special requests?"></textarea>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label for="promoCode" class="form-label">Promo Code</label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="promo-addon">Code</span>
+                            <input type="text" class="form-control" id="promoCode" name="promoCode" placeholder="EVENT2026" aria-describedby="promo-addon">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex align-items-center">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="newsletter" value="yes">
+                            <label class="form-check-label" for="newsletter">Subscribe to event updates</label>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex flex-wrap gap-2">
+                        <button type="submit" class="btn btn-primary">Complete Registration</button>
+                        <button type="reset" class="btn btn-outline-secondary">Clear Preferences</button>
+                    </div>
+                </form>
+            </div>
+            <div class="card p-4">
+                <h2>Login Form</h2>
+                <form class="row g-3">
+                    <div class="form-floating col-12">
+                        <input type="email" class="form-control" id="loginEmail" placeholder="name@example.com">
+                        <label for="loginEmail">Email address</label>
+                    </div>
+                    <div class="form-floating col-12">
+                        <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+                        <label for="loginPassword">Password</label>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-success">Sign In</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+        <!-- Feedback Form -->
+        <section id="feedback" class="container animate-up">
+            <h2>Event Feedback</h2>
+            <div class="card max-w-md">
+                <form id="feedbackForm">
+                    <div class="form-group">
+                        <label for="phone">Phone Number (10 digits)</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter phone number" pattern="[0-9]{10}" inputmode="numeric" autocomplete="tel">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="eventFee">Select Event to See Fee</label>
+                        <select id="eventFee">
+                            <option value="">-- Choose an Event --</option>
+                            <option value="0">Spring Community Cleanup (Free)</option>
+                            <option value="15">Annual Summer Festival ($15)</option>
+                            <option value="25">5k Charity Run ($25)</option>
+                            <option value="10">Local Art Exhibition ($10)</option>
+                        </select>
+                        <div style="margin-top: 15px; padding: 15px; background: #eff6ff; border-radius: 8px; border-left: 4px solid var(--secondary);">
+                            <span style="font-weight: 600;">Event Fee: </span>
+                            <span id="feeOutput" style="color: var(--secondary); font-weight: 700; font-size: 1.2rem;">$0</span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="feedbackMsg">Feedback</label>
+                        <textarea id="feedbackMsg" name="feedbackMsg" placeholder="Share your experience..." required></textarea>
+                        <div style="text-align: right; margin-top: 5px; color: var(--text-light); font-size: 0.9rem;">
+                            Characters: <span id="charCount" style="font-weight: bold;">0</span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group text-center" style="margin: 30px 0;">
+                        <label style="margin-bottom: 15px; color: var(--text-light);">Double-click image to enlarge</label>
+                        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=600&q=80" alt="Event preview" id="feedbackImg">
+                    </div>
+                    
+                    <button type="button" class="submit-btn">Submit Feedback</button>
+                </form>
+            </div>
+        </section>
+        
+        
+        <!-- Display vs Visibility Demonstration -->
+        <section id="demo" class="container animate-up">
+            <h2>Display vs Visibility Demo</h2>
+            <div class="card" style="text-align: center;">
+                <p>This demonstrates the difference between <strong>visibility: hidden;</strong> and <strong>display: none;</strong>.</p>
+                <!-- Container using flexbox for layout -->
+                <div style="display: flex; justify-content: center; gap: 15px; margin-top: 20px; align-items: center;">
+                    <div style="padding: 20px; background: var(--primary); color: white; border-radius: 8px;">Visible Box 1</div>
+                    
+                    <!-- Hide Completely (display: none) -->
+                    <!-- This box will NOT take up any space -->
+                    <div class="hide-completely" style="padding: 20px; background: red; color: white; border-radius: 8px;">
+                        Display None
+                    </div>
+                    
+                    <!-- Hide Visually (visibility: hidden) -->
+                    <!-- This box will still occupy space but be invisible -->
+                    <div class="hide-visually" style="padding: 20px; background: green; color: white; border-radius: 8px;">
+                        Visibility Hidden
+                    </div>
+                    
+                    <div style="padding: 20px; background: var(--secondary); color: white; border-radius: 8px;">Visible Box 2</div>
+                </div>
+                <p style="margin-top: 15px; font-size: 0.9rem; color: var(--text-light);">
+                    Notice the empty space above? That's the "Visibility Hidden" box still taking up layout space. The "Display None" box is completely gone!
+                </p>
+            </div>
+        </section>
+
+        <!-- Positioning Utilities -->
+        <section id="positioning-utilities" class="container animate-up py-5">
+            <h2>Positioning Utilities</h2>
+            <div class="card p-4 bg-light border rounded">
+                <h5 class="card-title">Fixed Footer Example</h5>
+                <p class="mb-0">A fixed footer remains anchored at the bottom of the viewport using <code>position-fixed bottom-0</code>.</p>
+            </div>
+        </section>
+
+        <!-- Promo Video -->
+        <section id="promo" class="container animate-up">
+            <h2>Event Promo</h2>
+            <div class="card max-w-md" style="padding: 10px;">
+                <div class="video-wrapper">
+                    <video id="promoVideo" controls
+                           src="https://www.w3schools.com/html/mov_bbb.mp4">
+                        Your browser does not support HTML video.
+                    </video>
+                </div>
+                <p id="videoStatus" class="text-center" style="font-weight: 600; color: var(--accent); padding: 15px 0 5px;">⏳ Loading video...</p>
+            </div>
+        </section>
+
+        <!-- Audio Section -->
+        <section id="audio" class="container animate-up">
+            <h2>Community Audio</h2>
+            <div class="card max-w-md">
+                <p style="margin-bottom: 15px; color: var(--text-light);">Enjoy a sample of the community vibe with the built-in audio player.</p>
+                <audio controls preload="metadata" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </section>
+    
+        <!-- Community Bulletin Section -->
+        <section id="bulletin" class="container animate-up">
+            <h2>Community Bulletin</h2>
+            <div class="card">
+                <div class="news-article">
+                    <p>Welcome to the weekly community bulletin! It has been an exciting month for our neighborhood. With the recent completion of the downtown park renovations, families have been flocking to the new playground and picnic areas. We encourage everyone to keep the park clean and utilize the new recycling bins provided by the city council.</p>
+                    <p>In other news, the local library is hosting a summer reading program for children of all ages. Volunteer sign-ups are now open for the upcoming charity run, and we are expecting record participation this year. Please ensure you register early if you plan to run or volunteer. Lastly, don't forget the town hall meeting next Wednesday where we will discuss the proposed cycling lanes along Main Street. Your voice matters, so please try to attend or submit your feedback online.</p>
+                    <p>As a reminder, street sweeping will occur on the first and third Tuesdays of the month. Please remember to move your vehicles off the street on those days to avoid ticketing. If you have questions regarding the sweeping schedule, contact the community center.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Community Portal</h3>
+                <p style="opacity: 0.8; font-size: 0.95rem;">Bringing neighbors together through engaging local events, cleanups, festivals, and more. Join us today!</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#mainHeader">Home</a></li>
+                    <li><a href="#events">Gallery</a></li>
+                    <li><a href="#contact">Register</a></li>
+                    <li><a href="#promo">Promo Video</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>📍 123 Community Lane, City</li>
+                    <li>✉️ info@communityportal.com</li>
+                    <li>📞 (555) 123-4567</li>
+                </ul>
+                <div class="mt-3 d-flex gap-3">
+                    <a href="#" class="text-decoration-none text-reset fs-4" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-decoration-none text-reset fs-4" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-decoration-none text-reset fs-4" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-decoration-none text-reset fs-4" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Community Event Portal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="position-fixed bottom-0 start-0 end-0 bg-dark text-white text-center py-2" style="z-index: 1050;">
+        <small>Fixed Footer: Community Event Portal • Always visible at the bottom</small>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery/3.7.1.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>            
